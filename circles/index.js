@@ -16,3 +16,11 @@ button.addEventListener('click', e => {
         color: "#" + Math.floor(Math.random() * 16777215).toString(16)
     })
 })
+
+const removeButtonEl = document.getElementById('removeCircleBtn');
+removeButtonEl.addEventListener('click', (_evt) => {
+    dispatch({
+        type: 'REMOVE_LAST_CIRCLE'
+    })
+})
+

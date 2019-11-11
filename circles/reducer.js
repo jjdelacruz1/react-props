@@ -17,6 +17,10 @@ const initialState = [
     },
 ];
 
+function deepCopy (x) {
+    return JSON.parse(JSON.stringify(x))
+}
+
 const reducer = (state = initialState, action) => {
     // Handle actions here - make sure you don't mutate the state!
     const { type, color, radius } = action;
@@ -26,6 +30,11 @@ const reducer = (state = initialState, action) => {
             ...state,
             { radius, color }
         ]
+    } else if (type === "REMOVE_LAST_CIRCLE") {
+        // let newState = deepCopy(state)
+        let newState = [...state]
+        newState.pop()
+        return newState
     }
 
     return state;
