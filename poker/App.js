@@ -14,9 +14,9 @@ const App = (props) => {
 // TIP: Use props to pass the suit and number to each Card component
 const Card = (props) => {
     let cardValue = "cards/"+props.value+props.suit+".png"
-    console.log(cardValue)
+    console.log(props, "From the card component")
     const style = {
-        width: '50px',
+        width: '75px',
         height: '100px',
     }
     return (
