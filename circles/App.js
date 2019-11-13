@@ -1,12 +1,12 @@
 // Render the circles using React!
 const App = (props) => {
-    let { circles } = props;
-    console.log('App component props:', props)
+    // let { circles } = props;
+    // console.log('App component props:', props)
 
     const AllCircles = props.circles.map(Circle)
 
     return (
-        <span>{AllCircles}</span>
+        <span>{props.circles.map(Circle)}</span>
     )
 }
 
