@@ -6,7 +6,7 @@ const App = (props) => {
     const AllCircles = props.circles.map(Circle)
 
     return (
-        <span>{props.circles.map(Circle)}</span>
+        <span>{AllCircles}</span>
     )
 }
 

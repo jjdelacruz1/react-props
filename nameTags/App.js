@@ -15,7 +15,7 @@ const NameTag = (props) => {
     return <div className="text-center mt-5 wholeTag">
                 <div className="nameTagTop">Hello, my name is:</div>
                 <div className="nameTagBottom">{props}</div>  
-           </div>
+          </div>
 }
 // CHALLENGE: Write a separate NameTag component for use in the App component
 // TIP: Use props to pass the name to each NameTag component
